@@ -1,0 +1,22 @@
+---
+title: 'Massages | Patthira Thai Spa'
+description: Explore our range of professional massage treatments in Northampton. From traditional Thai to aromatherapy, find your perfect massage at Patthira Thai Spa.
+permalink: 'massages/'
+eleventyNavigation:
+    key: Massages
+    order: 3100
+    parent: Treatments
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/massages.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+{% include 'components/pricing-menu.html' %}                                                  
+
+{% endblock %}

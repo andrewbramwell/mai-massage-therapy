@@ -1,0 +1,112 @@
+---
+title: 'Reviews | Patthira Thai Spa'
+description: "Read genuine client experiences at Patthira Thai Spa, Northampton. Discover why our authentic Thai massage and spa treatments earn consistent praise."
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="container">
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    60 minutes of massage, every part of the body, help and relaxation, I went to a physiotherapist for a year, spending 80 pounds per hour just for body radiation, after one session with Mrs. Sunny I feel much better, really good time profesional! Recommend Sunny ☀️ ❤️-
+                </p>
+                <div class="star-group">
+                    <span class="name">Monika Rymarz</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    I returned here again and had another great and relaxing experience. Napah demonstrates her experience and changed her style during the massage to direct her attention to help where I was in pain on my leg. I now feel great and pain free. Thank you Supatra. Thank you Napah!
+                </p>
+                <div class="star-group">
+                    <span class="name">Sean Hanley</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    What can we say girlfriend and I visited for a one an a half hours thai massage we was very impressed felt as though we both lost weight afterwards. A friendly an welcoming premises. Our aching muscles had gone an staff knew what they were doing 5 out of 5 service an we definitely be back.
+                </p>
+                <div class="star-group">
+                    <span class="name">Adam O'Neill</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    One of the best massages I’ve had, really focused on my areas of concern perfect pressure and massage moves. Highly recommend! Thank you
+                </p>
+                <div class="star-group">
+                    <span class="name">April Buckley</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Good massage nice and relaxing friendly staff...would definitely recommend.
+                </p>
+                <div class="star-group">
+                    <span class="name">Ben Marlow</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Great massage, felt super relaxed and stiffness went away. Napha was super friendly and helpful. Enjoyed it greatly and definitely recommend it 👌🏽
+                </p>
+                <div class="star-group">
+                    <span class="name">Caleb Xävier Petcu</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

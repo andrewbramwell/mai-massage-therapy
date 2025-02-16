@@ -1,0 +1,83 @@
+---
+title: 'Aromatherapy & Classic Thai Massage'
+description: "Experience our signature treatment combining traditional Thai massage with aromatherapy. Expert therapists deliver deep relaxation at Patthira Thai Spa, Northampton."
+permalink: 'aromatherapy-thai/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-713">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title"><span class="cs-color">AROMATHERAPY & CLASSIC THAI MASSAGE</span></h1>
+            <p>
+                Discover our most sought-after treatment, where traditional Thai massage techniques blend seamlessly with the therapeutic power of aromatherapy. This unique experience combines precise pressure point work with carefully selected essential oils to create profound relaxation and healing.
+            </p>
+
+            <h2>The Perfect Balance of Ancient and Modern</h2>
+            <p>
+                Our expertly trained therapists combine time-honoured Thai massage techniques with the gentle healing properties of aromatherapy. Each session is thoughtfully personalised, addressing your specific needs while promoting deep relaxation and overall wellbeing. Through this harmonious combination, we help restore both body and mind.
+            </p>
+
+            <h3>Physical Benefits</h3>
+            <ul>
+                <li>Relieves muscle tension and chronic stiffness</li>
+                <li>Improves flexibility and joint mobility</li>
+                <li>Enhances blood circulation and energy flow</li>
+                <li>Reduces physical fatigue and body aches</li>
+                <li>Promotes better sleep patterns</li>
+            </ul>
+
+            <h3>Mental and Emotional Benefits</h3>
+            <ul>
+                <li>Reduces stress and anxiety</li>
+                <li>Promotes mental clarity and calmness</li>
+                <li>Balances emotions through aromatherapy</li>
+                <li>Improves overall sense of wellbeing</li>
+                <li>Creates deep relaxation and peace of mind</li>
+            </ul>
+
+            <h4>Your Treatment Journey</h4>
+            <p>
+                Begin with a personalised consultation where our expert therapist will understand your needs and select the perfect blend of essential oils. Your treatment combines gentle stretching, precise pressure point work, and flowing massage movements, all enhanced by the therapeutic benefits of carefully chosen aromatherapy oils. <strong>Each element is tailored to your specific requirements</strong>, ensuring a truly personalised experience.
+            </p>
+
+            <p>
+                Ready to experience the perfect harmony of traditional Thai massage and aromatherapy? <a href="{{client.onlineBooking}}" target="_blank" rel="noopener">Book your session</a> today and embark on a journey to complete relaxation and renewal.
+            </p>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson7.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson7.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson7.jpg" alt="person" width="570" height="680" aria-hidden="true">
+            </picture>
+
+            <!--Flower Graphic-->
+            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fbig-abstract-flower.svg" alt="flower graphic" width="362" height="350" aria-hidden="true">
+
+            <!--Spidey Sense Graphic-->
+            <img class="cs-sense" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fspider-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+                                
+
+{% endblock %}
