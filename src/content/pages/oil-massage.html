@@ -1,0 +1,85 @@
+---
+title: 'Thai Oil Combination Massage'
+description: "Experience our signature Thai Oil Combination Massage, blending traditional stretching techniques with flowing oil massage for complete body rejuvenation."
+permalink: 'oil-massage/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-713">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title"><span class="cs-color">Thai Oil Combination Massage</span></h1>
+            <p>
+                Experience our signature Thai Oil Combination Massage, a blend of traditional Thai techniques and flowing oil massage. This comprehensive treatment combines gentle stretching, acupressure, and rhythmic oil-based movements to create a uniquely balanced experience that addresses both physical tension and energetic flow.
+            </p>
+
+            <h2>The Perfect Fusion of Eastern and Western Techniques</h2>
+            <p>
+                Our expert therapists seamlessly integrate authentic Thai massage methods with the nourishing benefits of therapeutic oils. Each session begins with traditional Thai stretching and pressure point work before transitioning to smooth, flowing strokes enhanced by warm oils. This dual approach allows us to address multiple layers of tension while promoting deep relaxation and overall balance.
+            </p>
+
+            <h3>Physical Benefits</h3>
+            <ul>
+                <li>Releases muscle tension throughout the entire body</li>
+                <li>Improves flexibility and range of motion</li>
+                <li>Enhances circulation and lymphatic drainage</li>
+                <li>Relieves joint stiffness and improves mobility</li>
+                <li>Promotes better energy flow throughout the body</li>
+            </ul>
+
+            <h3>Holistic Wellness Benefits</h3>
+            <ul>
+                <li>Balances energy and reduces fatigue</li>
+                <li>Promotes deep relaxation and stress relief</li>
+                <li>Improves sleep quality and mental clarity</li>
+                <li>Creates a sense of whole-body integration</li>
+                <li>Enhances overall sense of wellbeing</li>
+            </ul>
+
+            <h4>Your Treatment Journey</h4>
+            <p>
+                Begin with a personalized consultation where our therapist will understand your specific needs and comfort level. Your session starts with traditional Thai techniques, including gentle stretching and precise pressure point work, followed by flowing massage strokes with warm therapeutic oils. <strong>This combination approach is fully customized to address your unique concerns</strong>, ensuring a perfectly balanced experience of invigoration and relaxation.
+            </p>
+
+            <p>
+                Ready to discover the unique benefits of our Thai Oil Combination Massage? <a href="{{client.onlineBooking}}" target="_blank" rel="noopener">Book your session</a> today and experience the perfect harmony of traditional Thai techniques and oil-based therapeutic massage.
+            </p>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 660, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 660, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 660, height: 800}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 660, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 660, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 660, height: 800}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1040, height: 1246}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1040, height: 1246}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1040, height: 1246}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1040, height: 1246}) | jpeg %}" alt="massage oils" width="570" height="680" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="/assets/svgs/large-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+                                
+
+{% endblock %}

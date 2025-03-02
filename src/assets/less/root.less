@@ -8,9 +8,9 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #738C6D;
-        --primaryLight: #ffd675;
-        --secondary: #001f3f;
+        --primary: #b49661;
+        --primaryLight: #b49661;
+        --secondary: #b49661;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -61,47 +61,35 @@
     }
 
     // Button - can be replaced using CodeStitch's "Button" Stitches
-    .cs-button-solid {
-        font-size: (16/16rem);
-        /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-        text-decoration: none;
-        font-weight: 700;
-        font-family: fira sans;
-        text-transform: uppercase;
-        text-align: center;
-        margin: 0;
-        color: #fff;
-        min-width: (150/16rem);
-        padding: 0 (24/16rem);
-        background-color: var(--primary);
-        border-radius: (4/16rem);
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
-
-        &:before {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 0%;
-            background: #5b7057;
-            opacity: 1;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            border-radius: (4/16rem);
-            transition: width 0.3s;
-        }
-
-        &:hover {
-            &:before {
-                width: 100%;
-            }
-        }
-    }
+    // Button - can be replaced using CodeStitch's "Button" Stitches
+	.cs-button-solid {
+		font-size: 1rem;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: auto;
+		line-height: 3.125em;
+		height: 3.125rem;
+		text-align: center;
+		padding: 0 1.875rem;
+		border-radius: 1.5rem 0 1.5rem 0;
+		position: relative;
+		z-index: 1;
+		background-color: var(--primary);
+		color: #fff;
+		transition: background-color 0.3s, border-radius 0.3s;
+	  }
+	  .cs-button-solid:hover {
+		background-color: var(--primary);
+		border-radius: 0 1.5rem 0 1.5rem;
+	  }
+	  .skip {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		z-index: -1111111;
+	  }
 
     .cs-hide-on-mobile {
         display: none;
@@ -126,7 +114,7 @@
         margin: 0;
         overflow-x: hidden;
         padding: 0;
-        font-family: "DM sans", Arial, sans-serif;
+        font-family: "josefin sans", Arial, sans-serif;
         font-size: 100%;
         color: var(--bodyTextColor);
     }
@@ -157,8 +145,7 @@
     h6 {
         margin: 0;
         color: var(--headerColor);
-        font-family: fira sans;
-        text-transform: uppercase;
+        
         
     }
 
@@ -192,38 +179,21 @@
     }
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-    /* roboto-regular - latin */
-    /* dm-sans-regular - latin */
+    /* josefin-sans-regular - latin */
     @font-face {
         font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'DM Sans';
+        font-family: 'Josefin Sans';
         font-style: normal;
         font-weight: 400;
-        src: url('/assets/fonts/dm-sans-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url('/assets/fonts/josefin-sans-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
-    /* dm-sans-700 - latin */
+    /* josefin-sans-700 - latin */
     @font-face {
         font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'DM Sans';
+        font-family: 'Josefin Sans';
         font-style: normal;
         font-weight: 700;
-        src: url('/assets/fonts/dm-sans-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    }
-    /* fira-sans-regular - latin */
-    @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: url('/assets/fonts/fira-sans-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    }
-    /* fira-sans-600 - latin */
-    @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 600;
-        src: url('/assets/fonts/fira-sans-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url('/assets/fonts/josefin-sans-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
 }
 
@@ -406,7 +376,7 @@
             padding: (16/16rem) (24/16rem);
             /* prevents padding from affecting height and width */
             box-sizing: border-box;
-            background-color: #f1f4f0;
+            background-color: #f7f7f7;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -669,6 +639,8 @@
             font-size: clamp(1rem, 2.5vw, 1.5rem);
             line-height: 1.2em;
             text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
             margin: 0;
             color: var(--headerColor);
             display: inline-block;
@@ -1014,7 +986,7 @@
                 content: '';
                 width: 100vw;
                 height: 100%;
-                background: #f1f4f0;
+                background: #f7f7f7;
                 opacity: 1;
                 position: absolute;
                 display: block;
@@ -1136,6 +1108,8 @@
             /* 14px - 16px */
             font-size: clamp(.875rem, 1.3vw, 1rem);
             line-height: 1.5em;
+            text-transform: uppercase;
+            font-weight: 700;
             text-decoration: none;
             margin: 0;
             color: var(--headerColor);
@@ -1361,7 +1335,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cta-1071 {
+    #cta-697 {
         padding: var(--sectionPadding);
         background-color: var(--primary);
         position: relative;
@@ -1390,90 +1364,102 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-text {
-            text-align: left;
-            /* 60px - 120px */
-            margin-top: clamp(1rem, 1rem, 1rem);
-            max-width: (700/16rem);
-            color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex {
-            max-width: (630/16rem);
-        }
-
         .cs-title {
-            margin: 0;
-
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-button-box {
+        .cs-button-solid {
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: auto;
+            line-height: 3.125em;
+            height: 3.125rem;
+            text-align: center;
+            padding: 0 1.875rem;
+            border-radius: 1.5rem 0 1.5rem 0;
+            position: relative;
+            z-index: 1;
+            background-color: #452C1F;
+            color: #fff;
+            transition: background-color 0.3s, border-radius 0.3s;
+          }
+          .cs-button-solid:hover {
+            background-color: #452C1F;
+            border-radius: 0 1.5rem 0 1.5rem;
+          }
+          .skip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: -1111111;
+          }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* makes it act like a background image */
+            object-fit: cover;
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cta-697 {
+        .cs-content {
+            text-align: left;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+
+
+
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-712 {
+        /* 175px - 200px top */
+        padding: clamp(15.3125rem, 14vw, 17.5rem) 1.4rem 8.75rem;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            text-align: center;
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
             gap: (16/16rem);
         }
 
-        .cs-button-transparent {
-            font-size: (16/16rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-decoration: none;
-            font-weight: 700;
-            font-family: fira sans;
-            text-transform: uppercase;
-            text-align: center;
+        .cs-int-title {
+            /* 39px - 61px */
+            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
             margin: 0;
-            color: #fff;
-            min-width: (150/16rem);
-            padding: 0 (24/16rem);
-            background-color: transparent;
-            display: inline-block;
+            color: var(--bodyTextColorWhite);
             position: relative;
-            z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-            transition: color 0.3s;
-
-            &:before {
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 0%;
-                background: #fff;
-                border-radius: (4/16rem);
-                opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                transition: width 0.3s;
-            }
-
-            &:after {
-                /* border */
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                background-color: transparent;
-                /* prevents padding from adding to the width */
-                box-sizing: border-box;
-                border: 1px solid #fff;
-                border-radius: (4/16rem);
-                top: 0;
-                left: 0;
-                z-index: -1;
-                transition: width 0.3s;
-                pointer-events: none;
-            }
-
-            &:hover {
-                color: var(--primary);
-                &:before {
-                    width: 100%;
-                }
-            }
         }
 
         .cs-background {
@@ -1492,8 +1478,8 @@
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: #1a1a1a;
-                opacity: 0.72;
+                background: #000;
+                opacity: 0.75;
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -1512,24 +1498,27 @@
     }
 }
 
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #cta-1071 {
-        .cs-content {
-            text-align: left;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        .cs-button-box {
-            flex-wrap: nowrap;
-            align-items: center;
-            flex: none;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-712 {
+        .cs-background {
+            &:before {
+                opacity: 1;
+                background: linear-gradient(
+                    90.01deg,
+                    rgba(0, 0, 0, 0.9) 16.86%,
+                    rgba(0, 0, 0, 0) 100%
+                );
+            }
         }
     }
 }
-             
 
+                                
+
+
+                                
+             
 /*-- -------------------------- -->
 <---        Footer 710          -->
 <--- -------------------------- -*/
@@ -1539,7 +1528,7 @@
     #cs-footer-710 {
         padding: var(--sectionPadding);
         padding-bottom: (50/16rem);
-        background-color: #50624c;
+        background-color: #452C1F;
         position: relative;
         z-index: 1;
 
@@ -1616,7 +1605,6 @@
             font-size: (16/16rem);
             line-height: 1.2em;
             font-weight: 700;
-            font-family: fira sans;
             text-transform: Uppercase;
             margin: 0 0 (24/16rem) 0;
             color: #fff;
@@ -1786,8 +1774,6 @@
             font-size: inherit;
             line-height: inherit;
             text-decoration: none;
-            font-family: fira sans;
-            text-transform: Uppercase;
             margin: 0;
             color: inherit;
             display: inline-block;

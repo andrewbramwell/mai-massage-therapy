@@ -1,0 +1,85 @@
+---
+title: 'Deep Tissue Massage'
+description: "Relieve chronic pain and tension with our therapeutic Deep Tissue Massage. Expert techniques target persistent knots and adhesions for lasting relief."
+permalink: 'deep-tissue/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-713">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title"><span class="cs-color">Deep Tissue Massage</span> in Whistable</h1>
+            <p>
+                Experience our therapeutic deep tissue massage, a powerful treatment that targets chronic tension and muscle pain at its source. This specialized technique uses firm pressure and deliberate strokes to access deeper layers of muscle and connective tissue, releasing persistent knots and tension that cause discomfort.
+            </p>
+
+            <h2>Therapeutic Healing Through Expert Touch</h2>
+            <p>
+                Our skilled therapists use advanced techniques to work layer by layer through muscle fibers and fascia. Each session is carefully tailored to your body's specific needs, focusing on problem areas while promoting circulation and natural healing processes. Through this targeted approach, we help restore function and provide lasting relief from chronic pain patterns.
+            </p>
+
+            <h3>Physical Benefits</h3>
+            <ul>
+                <li>Releases chronic muscle tension and adhesions</li>
+                <li>Breaks down scar tissue and improves recovery</li>
+                <li>Increases range of motion and flexibility</li>
+                <li>Improves posture and alignment</li>
+                <li>Reduces inflammation and promotes healing</li>
+            </ul>
+
+            <h3>Overall Wellness Benefits</h3>
+            <ul>
+                <li>Relieves chronic pain conditions</li>
+                <li>Reduces stress and tension buildup</li>
+                <li>Improves athletic performance and recovery</li>
+                <li>Enhances body awareness and posture</li>
+                <li>Promotes better physical function and mobility</li>
+            </ul>
+
+            <h4>Your Treatment Journey</h4>
+            <p>
+                Begin with a thorough consultation where our expert therapist will assess your areas of concern and discuss your pain patterns. Your treatment involves progressive pressure techniques that gradually work deeper into problematic muscle groups, breaking down adhesions and releasing chronic tension. <strong>Each treatment is uniquely adapted to your comfort level and therapeutic needs</strong>, ensuring effective relief without unnecessary discomfort.
+            </p>
+
+            <p>
+                Ready to experience the transformative benefits of professional deep tissue massage? <a href="{{client.onlineBooking}}" target="_blank" rel="noopener">Book your session</a> today and take the first step toward lasting pain relief and improved physical function.
+            </p>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 660, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 660, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 660, height: 800}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 660, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 660, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 660, height: 800}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 1040, height: 1246}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 1040, height: 1246}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 1040, height: 1246}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/deep-tissue-f.jpg" | resize({width: 1040, height: 1246}) | jpeg %}" alt="massage oils" width="570" height="680" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="/assets/svgs/large-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+                                
+
+{% endblock %}
