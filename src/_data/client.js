@@ -4,7 +4,7 @@ module.exports = {
     "phoneForTel": "+447359925280",
     "phoneFormatted": "07359 925280",
     "openingHours": "Mon: 3pm-7pm | Wed Thu Fri: 10am-7pm",
-    "onlineBooking": "https://maismassagetherapy.setmore.com",
+    "onlineBooking": "https://www.sumupbookings.com/mais-massage-therapy",
     "address": {
         "lineOne": "99A Canterbury Road",
         "lineTwo": "",
@@ -20,7 +20,7 @@ module.exports = {
         "googleReview": "",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://patthirathaispa.co.uk"
+    "domain": "https://maimassagetherapy.co.uk"
 };
 
 
