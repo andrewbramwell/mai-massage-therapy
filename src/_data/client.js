@@ -3,7 +3,7 @@ module.exports = {
     "email": "mai.massagetherapyservice@gmail.com",
     "phoneForTel": "+447359925280",
     "phoneFormatted": "07359 925280",
-    "openingHours": "Mon: 3pm-7pm | Wed Thu Fri: 10am-7pm",
+    "openingHours": "Mon: 3pm-7pm | Tues - Fri: 10am-7pm",
     "onlineBooking": "https://www.sumupbookings.com/mais-massage-therapy",
     "address": {
         "lineOne": "99A Canterbury Road",

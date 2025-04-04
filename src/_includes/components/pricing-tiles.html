@@ -241,6 +241,36 @@
                     </p>
                 </a>
             </li>
+            <li class="cs-item">
+                <a href="{{client.onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/popup-m.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="head massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Couples Massage</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min £95</strong> 
+                    </p>
+                     <p class="cs-item-text">
+                        <strong>Available Tuesday's</strong> 
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Unwind together as skilled therapists provide personalised treatments side-by-side in our tranquil space. Choose from Full-body Aromatherapy Massage for complete relaxation or Deep Tissue Massage for effective tension release and muscle recovery.
+                    </p>
+                </a>
+            </li>
         </ul>
         <a href="{{client.onlineBooking}}" target="_blank" rel="noopener" class="cs-button-solid">Book A Massage</a>
     </div>
